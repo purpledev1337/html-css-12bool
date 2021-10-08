@@ -11,7 +11,7 @@
     max-width: 100%;
 }
 
-.col- {
+.col {
     flex-grow: 1;
     flex-basis: 0;
     max-width: 100%;
@@ -138,7 +138,7 @@
 }
 
 /* columns SMARTPHONE NOTE from 576px to 767px: */
-@media all and (min-width: 576px) and (min-width:767px) {
+@media all and (min-width: 576px) and (max-width:767px) {
     .col-sm-1 {
         flex-basis: calc((100% / 12) * 1);
         max-width: calc((100% / 12) * 1);
@@ -248,7 +248,7 @@
     }
 }
 /* columns TABLET from 768px to 991px: */
-@media all and (min-width: 768px) and (min-width:991px) {
+@media all and (min-width: 768px) and (max-width:991px) {
     .col-md-1 {
         flex-basis: calc((100% / 12) * 1);
         max-width: calc((100% / 12) * 1);

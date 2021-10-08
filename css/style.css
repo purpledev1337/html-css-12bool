@@ -8,7 +8,7 @@
 
 /* columns specific rules */
 
-[class*="col-xs-"] {
+[class*="col-"] {
     background-color: rgb(50, 50, 255);
     color: #fff;
     font-weight: bold;
@@ -17,7 +17,7 @@
     text-align: center;
 }
 
-[class*="col-xs-offset-"] {
+[class*="offset"] {
     border: none;
     padding: 0;
 }
