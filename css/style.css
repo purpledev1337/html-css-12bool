@@ -32,9 +32,29 @@
     color: black;
     font-weight: bold;
     border-color: rgb(50, 50, 255);
-    padding: 2% 0;
+    height: 50px;
+    overflow: auto;
 }
 
-.row:nth-of-type(7) {
-    margin-bottom: 50px;
+#main-title {
+    position: relative;
+    padding: 15px 0;
+}
+
+#main-title::after {
+    content: "\21E6Resize me \21E8";
+    font-size: 18px;
+    color: yellow;
+    background-color: black;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    animation: scroll 1s ease infinite;
+}
+
+@keyframes scroll {
+    50% {
+    transform: translate(-25px , 0);
+    }
 }
